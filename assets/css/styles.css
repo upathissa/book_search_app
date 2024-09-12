@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* For the normal Indeewaree */
+@font-face {
+    font-family: 'Indeewaree';
+    src: url('/php/assets/fonts/UN-Indeewaree.ttf') format('truetype');
+  }
+
+/* For the normal Abhaya */
+@font-face {
+    font-family: 'Abhaya';
+    src: url('/php/assets/fonts/UN-Abhaya.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* For the bold Abhaya */
+  @font-face {
+    font-family: 'Abhaya';
+    src: url('/php/assets/fonts/UN-Abhaya-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body {
+    background-color: bisque;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+main {
+    flex: 1;
+    margin-top: auto;
+    max-width: 500px;
+    background-color: rgb(249, 249, 249);
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 4px;
+    width: 90%;
+}
+.title{
+    margin: 25px auto;
+    text-align: center;
+    font-family: 'Indeewaree', sans-serif;
+    font-size: 50px;
+    color: darkgoldenrod;
+}
+#serch_form {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+#search {
+    border-style: none none solid none;
+    border-width: 0 0 1px 0;
+    border-color: #ffc080;
+    outline: none;
+    text-align: center;
+    font-family: 'Abhaya', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    background-color: transparent;
+    margin-left: 10px;
+    width: 20%;
+    transition: width 0.2s ease-in-out;
+    color: #a06a33;
+  }
+.search_icon {
+    background-image: url('/php/assets/imgs/search_icon.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding: 10px 10px 10px 40px !important;
+}
+
+/* .input_focus {
+    background-image: none;
+    color: red;
+    width: 80%;
+    padding: 10px;
+  } */
+
+#search:focus::placeholder {
+color: transparent;
+}
+
+
+.results {
+    /* height: 500px; */
+    border-radius: 2px;
+    /* border: solid 2px red; */
+}
+
+.results li{
+    text-decoration: none;
+    font-family: 'Abhaya', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #3c2f22;
+}
+
+.results ol{
+    list-style-type: none;
+}
+
+.results li .author {
+    color: #b99776;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #3c2f22;
+    color: #fff;
+    padding: 10px;
+  }
+
+/* input[type=text] {
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+} */
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 85vw; /* Set the width to 90% on mobile devices */
+        margin: 0 autos;
+        padding: 15px;
+    }
+
+    #search {
+        width: 30%;
+    }
+
+    .title {
+        padding-bottom: 25px;
+    }
+}
