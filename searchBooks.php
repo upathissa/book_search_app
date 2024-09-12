@@ -8,7 +8,7 @@
     $host = 'localhost'; // Host name
     $dbname = 'booksdb'; // Database name
     $username = 'root'; // Username for database
-    $password = 'amilaupathissa'; // Password for database
+    $password = 'Admin@123'; // Password for database
 
     // Connect to the database
     $conn = new mysqli($host, $username, $password, $dbname);
