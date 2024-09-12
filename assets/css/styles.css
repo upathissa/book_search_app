@@ -5,13 +5,13 @@
 /* For the normal Indeewaree */
 @font-face {
     font-family: 'Indeewaree';
-    src: url('/php/assets/fonts/UN-Indeewaree.ttf') format('truetype');
+    src: url('/assets/fonts/UN-Indeewaree.ttf') format('truetype');
   }
 
 /* For the normal Abhaya */
 @font-face {
     font-family: 'Abhaya';
-    src: url('/php/assets/fonts/UN-Abhaya.ttf') format('truetype');
+    src: url('/assets/fonts/UN-Abhaya.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -19,7 +19,7 @@
   /* For the bold Abhaya */
   @font-face {
     font-family: 'Abhaya';
-    src: url('/php/assets/fonts/UN-Abhaya-bold.ttf') format('truetype');
+    src: url('/assets/fonts/UN-Abhaya-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
@@ -71,7 +71,7 @@ main {
     color: #a06a33;
   }
 .search_icon {
-    background-image: url('/php/assets/imgs/search_icon.png');
+    background-image: url('/assets/imgs/search_icon.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: 15px center;
