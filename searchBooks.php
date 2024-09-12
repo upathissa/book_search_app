@@ -1,4 +1,10 @@
 <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    
+    header('Content-Type: application/json'); 
+
     $host = 'localhost'; // Host name
     $dbname = 'booksdb'; // Database name
     $username = 'root'; // Username for database
@@ -11,7 +17,7 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    
+
     $search = isset($_GET['query']) ? $_GET['query'] : ''; // Ensure the search term is set
 
     // Check for empty search term
@@ -53,7 +59,6 @@
     $stmt->close();
     $conn->close();
 
-    // Return results as JSON
-    header('Content-Type: application/json');
     echo json_encode($books);
+    exit;
 ?>
